@@ -39,7 +39,7 @@ if($boloTicker){
 		$btformat = "H:i:s";
 		$btcnt = count($boloTicker);
 		
-		echo "<li><b>$btcnt Active Bolos Past Hour:</b></li>";
+		echo "<li><b>$btcnt active Bolos in der letzten Stunde:</b></li>";
 		for($i = 0; $i < $btcnt; $i++) {
 			$item = "item".$i;
 			$btutcTS = antiXSS($boloTicker[$i]['RealDate']);
