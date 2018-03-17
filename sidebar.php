@@ -32,12 +32,12 @@
                             }
 							if($off) {
 							?>
-                            <li><a href="#">Useful Information</a>
+                            <li><a href="#">Nützliche Informationen</a>
                             	<ul>
-                            		<li><a href="roster.php">Police Roster</a></li>
-                                	<li><a href="arrests.php">Recent Arrests</a></li>
+                            		<li><a href="roster.php">Polizei Dienstplan</a></li>
+                                	<li><a href="arrests.php">Datenbank Verhaftungen</a></li>
                                 	<li><a href="citations.php">Recent Citations</a></li>
-                                	<li><a href="info.php">Useful Links</a></li>
+                                	<li><a href="info.php">Nützliche Links</a></li>
                                 </ul>
                             </li>
 							<li><a href="#">Haftbefehle</a>
