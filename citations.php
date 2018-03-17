@@ -73,13 +73,13 @@ $cminfo = json_decode($cminfo['data'], true);
 							  	<table style="text-align: center">
 								  <tbody>
 									<tr>
-										<th>Time Entered</th>
-										<th>Date</th>
+										<th>Zeit</th>
+										<th>Datum</th>
 										<th>Name</th>
-										<th>Offense</th>
-										<th>Ticket Price</th>
-										<th>Officer</th>
-										<th>Additional Information</th>
+										<th>Delikt</th>
+										<th>Bußgeld</th>
+										<th>Beamter</th>
+										<th>Zusätzliche Informationen</th>
 									</tr>
 									<?php
 									$acnt = count($traffic);
