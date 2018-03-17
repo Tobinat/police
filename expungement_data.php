@@ -29,7 +29,7 @@ if(isset($_COOKIE["LSTZ"])){
 
 		<!-- Meta -->
 		<meta charset="UTF-8">
-		<title><?php echo $cminfo['pda']; ?> - Expungement Database</title>
+		<title><?php echo $cminfo['pda']; ?> - Prozess schließen</title>
 		<meta name="description" content="<?php echo $cminfo['pdn']; ?> - Department of Corrections">
 		<meta name="author" content="Cole, Scott Harm (Retired)">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -66,8 +66,8 @@ if(isset($_COOKIE["LSTZ"])){
 					<div id="heading" class="row">
 						<div class="col-12">
 							<header>
-								<h1>Department of Justice Expungement Database</h1>
-								<h2>Mess up a record? Please tell Cole for now.</h2>
+								<h1>Department of Justice Fall schließung Datenbank</h1>
+								<h2>Fehlt ein Fall? Bitte sofort melden.</h2>
 							</header>
 						</div>
 					</div>
@@ -76,7 +76,7 @@ if(isset($_COOKIE["LSTZ"])){
 							<article class="inner">
 								<div class="row">
 								  <div class="col-12">
-									<h4>Choose Record to Expunge for <?php echo ucwords($crim); ?></h4>
+									<h4>Wähle Fall von <?php echo ucwords($crim); ?> den du schließen möchtest</h4>
 									</div>
 								</div>
 								<center>
@@ -94,14 +94,14 @@ if(isset($_COOKIE["LSTZ"])){
 							  <table style="text-align: center">
 								  <tbody>
 									<tr>
-										<th>Time Entered</th>
+										<th>Zeit der Eintragung</th>
 										<th>Name</th>
-										<th>Crime</th>
-										<th>Time</th>
-										<th>Bail</th>
+										<th>Delikt</th>
+										<th>Zeit</th>
+										<th>Kaution</th>
 										<th>Bond</th>
 										<th>DOJ Auth</th>
-										<th>Expunged Date</th>
+										<th>Schließungs Datum</th>
                                         <th>Status</th>
 									</tr>
 									<?php
@@ -129,14 +129,14 @@ if(isset($_COOKIE["LSTZ"])){
 							  <table style="text-align: center">
 								  <tbody>
 									<tr>
-										<th>Time Entered</th>
-										<th>Date</th>
+										<th>Zeit der Eintragung</th>
+										<th>Datum der Eintragung</th>
 										<th>Name</th>
-										<th>Crime</th>
-										<th>Time</th>
-										<th>Bail</th>
+										<th>Delikt</th>
+										<th>Zeit</th>
+										<th>Kaution</th>
 										<th>Bond</th>
-										<th>Arresting Officer</th>
+										<th>Festgenommen von</th>
                                         <th>Status</th>
 									</tr>
 									<?php
