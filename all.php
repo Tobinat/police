@@ -56,7 +56,7 @@ $cminfo = json_decode($cminfo['data'], true);
 					<div id="heading" class="row">
 						<div class="col-12">
 							<header>
-								<h1>All Arrests - Dev Use Only</h1>
+								<h1>Alle Anzeigen - Dev Use Only</h1>
 							</header>
 						</div>
 					</div>
@@ -79,13 +79,14 @@ $cminfo = json_decode($cminfo['data'], true);
 										<th>Bail</th>
 										<th>Bond</th>
 										<th>Arresting Officer</th>
+										<th>Evidence</th>
 									</tr>
 									<?php
 									for($i = 0; $i < $acnt; $i++) {
 										$aoffi = getUser($arrests[$i]['copid'], U_ID);
 										($arrests[$i]['bondid'] == -1) ? $bond = "No" : $bond = "Yes";
 										if($arrests[$i]['bail'] == 0) $bail = "No"; else $bail = "$".number_format($arrests[$i]['bail']);
-										echo "<tr><td>".antiXSS($arrests[$i]['RealDate'])."</td><td>".antiXSS(getCiv($arrests[$i]['uid'], U_ID)['name'])."</td><td>".titleFormat(antiXSS($arrests[$i]['crimes']))."</td><td>".antiXSS(number_format($arrests[$i]['time']))."</td><td>$bail</td><td>$bond</td><td>$aoffi[display]</td></tr>";
+										echo "<tr><td>".antiXSS($arrests[$i]['RealDate'])."</td><td>".antiXSS(getCiv($arrests[$i]['uid'], U_ID)['name'])."</td><td>".titleFormat(antiXSS($arrests[$i]['crimes']))."</td><td>".antiXSS(number_format($arrests[$i]['time']))."</td><td>$bail</td><td>$bond</td><td>$aoffi[display]</td><td>".titleFormat(antiXSS($arrests[$i]['evd']))."</td></tr>";
 									}
 									?>
 								  </tbody>

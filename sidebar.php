@@ -20,10 +20,10 @@
                             <li><a href="freq.php">Frequenzen & Bedrohungen</a></li>
                             <li><a href="#">Aufzeichnungen</a>
                             	<ul>
-                            		<li><a href="crime.php">Strafregister</a></li>
+                            		<li><a href="crime.php">Anzeigen</a></li>
                                     <li><a href="traffic.php">Straftaten</a></li>
+									<?php if(hasPerm("doj")) { ?>
                                     <li><a href="doc.php">DOJ Panel</a></li>
-                                    <?php if(hasPerm("doj")) { ?>
                                     <li><a href="expungement.php">Expungements</a></li>
                                     <?php } ?>
                                 </ul>
@@ -43,7 +43,7 @@
 							<li><a href="#">Haftbefehle</a>
                             	<ul>
                             		<li><a href="wname.php">Suchen/Hinzufügen</a></li>
-                                	<li><a href="warrants.php">Alle Haftbefehle ansehen</a></li>
+                                	<li><a href="warrants.php">Alle Haftbefehle</a></li>
                                 </ul>
                             </li>
 							<?php

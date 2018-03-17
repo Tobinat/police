@@ -117,41 +117,44 @@ $cminfo = json_decode($cminfo['data'], true);
 												}
 												setInterval("autocomp()", 2000);
 											</script>
-											<label for="name">Suspect Name <span class="form-required" title="This field is required.">*</span></label>
+											<label for="name">Verdächtiger<span class="form-required" title="Dieses Feld wird benötigt.">*</span></label>
 											<input autocomplete="off" list="autocomp" type="text" name="crim" class="form-control" value="<?php echo $crim; ?>" id="name">
 											<datalist id="autocomp"></datalist>
 										</div>
 										<div class="form-group col-2">
-										  <label for="time">Total Time <span class="form-required" title="This field is required.">*</span></label>
-											<input type="text" name="time" placeholder="In minutes" class="form-control" id="time" required >
+										  <label for="time">Gesamtzeit</label>
+											<input type="text" name="time" placeholder="In Minuten" class="form-control" id="time" >
 											<input type="hidden" name="random" value="<?php echo rand(); ?>">
 						   		  		</div>
                                         <div class="form-group col-2">
-										  <label for="date">Date <span class="form-required" title="This field is required.">*</span></label>
-											<input type="text" name="date" required value="<?php echo date("Y-m-d"); ?>" placeholder="yyyy-mm-dd" class="form-control" id="date">
+										  <label for="date">Datum <span class="form-required" title="Dieses Feld wird benötigt.">*</span></label>
+											<input type="text" name="date" required value="<?php echo date("Y-m-d"); ?>" placeholder="dd-mm-yyyy" class="form-control" id="date">
 								   		</div>
 								   		<div class="form-group col-1">
 								   		  
 								   		    <label>
 								   		      <input type="radio" checked name="ibail" value="Bail" id="RadioGroup1_0" class="form-control">
-								   		      Bail</label>
+								   		      Kaution</label>
 								   		    <label>
 								   		      <input name="ibail" type="radio" id="RadioGroup1_1" value="Bond" class="form-control">
 								   		      Bond</label>
-								   		    <br>
+								   		    <label>
+								   		      <input name="ibail" type="radio" id="Test" value="Anzeige" class="form-control">
+								   		      Anzeige</label>
+											<br>
 							   		      
                                    </div>
                                    		<div class="form-group col-2">
-										  <label for="bond">Bail/Bond</label>
+										  <label for="bond">Kaution/Bond</label>
 											<input type="text" name="bailbond" placeholder="If none leave blank" class="form-control" id="bond" >
 						   		   		</div>
                                         <div class="form-group col-4">
-										  <label for="crime">Crime(s) <span class="form-required" title="This field is required.">*</span></label>
-											<input type="text" name="crime" placeholder="Seperate each crime with a ," class="form-control" id="crime" required>
+										  <label for="crime">Kriminalität(en) <span class="form-required" title="Dieses Feld wird benötigt.">*</span></label>
+											<input type="text" name="crime" placeholder="Trennt jedes Verbrechen mit einem ," class="form-control" id="crime" required>
 								   		</div>
 										<div class="form-group col-8">
-										  <label for="evi">Evidence (Please keep links short, use <a href="https://goo.gl/">https://goo.gl</a> if needed. If posting pictures, please link to a <a href="http://imgur.com/">Imgur</a> album)</label>
-											<input type="text" name="evi" placeholder="Provide any evidence if needed" class="form-control" id="evi">
+										  <label for="evi">Beweise (Bitte haltet die Links kurz, benutzt ggf. <a href="https://goo.gl/">https://goo.gl</a> . Wenn Bilder gepostet werden, bitte verlinken z.B <a href="http://imgur.com/">Imgur</a> album)</label>
+											<input type="text" name="evi" placeholder="Gibt bei bedarf Beweise an" class="form-control" id="evi">
 								   		</div>
 								</div>
                                 <button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Add Record</button>
@@ -163,16 +166,16 @@ $cminfo = json_decode($cminfo['data'], true);
 							  <table style="text-align: center">
 								  <tbody>
 									<tr>
-										<th>Time Entered</th>
-										<th>Date</th>
+										<th>Zeit eingegeben</th>
+										<th>Datum</th>
 										<th>Name</th>
-										<th>Crime</th>
-										<th>Time</th>
-										<th>Bail</th>
-										<th>Bond</th>
-										<th>Evidence</th>
-										<th>Arresting Officer</th>
-                                        <th>Processing Officer</th>
+										<th>Kriminalität</th>
+										<th>Zeit</th>
+										<th>Kaution</th>
+										<th>Black Escalade with 3 occupants, armed and dangerous</th>
+										<th>Beweise</th>
+										<th>Aufgenommen durch</th>
+                                        <th>Bearbeitet durch</th>
 									</tr>
 									<?php
 									$format = "Y-m-d H:i:s";
