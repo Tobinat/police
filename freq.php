@@ -35,7 +35,7 @@ fclose($file);
 
 		<!-- Meta -->
 		<meta charset="UTF-8">
-		<title><?php echo $cminfo['pda']; ?> - Frequencies</title>
+		<title><?php echo $cminfo['pda']; ?> - Frequenzen</title>
 		<meta name="description" content="<?php echo $cminfo['pdn']; ?> - Frequencies">
 		<meta name="author" content="Cole, Scott Harm (Retired)">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -73,7 +73,7 @@ fclose($file);
 					<div id="heading" class="row">
 						<div class="col-12">
 							<header>
-								<h1>Frequencies</h1>
+								<h1>Frequenzen</h1>
 							</header>
 						</div>
 					</div>
@@ -105,16 +105,16 @@ fclose($file);
 										echo $col;
 										?>
 										</h4>
-                                        <h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">PD Frequency 1: <?php echo $info['tac1']; ?></h4>
-                                        <h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">PD Frequency 2: <?php echo $info['tac2']; ?></h4>
-                                        <h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">DOC Frequency: <?php echo $info['doc1']; ?></h4>
+                                        <h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">PD Frequenz 1: <?php echo $info['tac1']; ?></h4>
+                                        <h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">PD Frequenz 2: <?php echo $info['tac2']; ?></h4>
+                                        <h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">DOC Frequenz: <?php echo $info['doc1']; ?></h4>
                                         <?php if(hasPerm("dtu")) { ?>
-                                        <h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">DTU Frequency: <?php echo $info['dtu']; }?></h4>
-										<h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">Emergency Backup Frequency: <?php echo $info['emg']; ?></h4>
+                                        <h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">DTU Frequenz: <?php echo $info['dtu']; }?></h4>
+										<h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">Notfall Backup Frequenz: <?php echo $info['emg']; ?></h4>
                                         <br/>
-                                        <h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">PD-EMS Joint Frequency: <?php echo $info['ems']; ?></h4>
+                                        <h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">PD-EMS Joint Frequenz: <?php echo $info['ems']; ?></h4>
                                         <h4 style="-webkit-touch-callout: none; -webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;">Ch-3: <?php echo $info['ch3']; ?></h4>
-										<span><b>Last Accesses:</b><br/><?php
+										<span><b>Letzter Zugriff:</b><br/><?php
 										arsort($lf, SORT_NUMERIC);
 										foreach($lf as $k => $v) {
 											if(empty($k)) continue;
