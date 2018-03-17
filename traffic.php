@@ -11,7 +11,7 @@ $cminfo = json_decode($cminfo['data'], true);
 
 		<!-- Meta -->
 		<meta charset="UTF-8">
-		<title><?php echo $cminfo['pda']; ?> - Infractions</title>
+		<title><?php echo $cminfo['pda']; ?> - Straftaten</title>
 		<meta name="description" content="<?php echo $cminfo['pdn']; ?> - Infractions">
 		<meta name="author" content="Cole, Scott Harm (Retired)">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -53,7 +53,7 @@ $cminfo = json_decode($cminfo['data'], true);
 						<div class="col-12">
 
 							<header>
-								<h1>Infractions</h1>
+								<h1>Straftaten</h1>
 							</header>
 
 						</div>
@@ -63,7 +63,7 @@ $cminfo = json_decode($cminfo['data'], true);
 							<article class="inner">
 								<div class="row">
 									<div class="col-12">
-										<h4>Search/Add Records:</h4>
+										<h4>Straftaten Suchen/Hinzufügen:</h4>
                                        	<form id="post-comment" class="inner" action="traffic_data.php" method="post">
 										<div class="row">
 										<div class="form-group col-4">
@@ -71,7 +71,7 @@ $cminfo = json_decode($cminfo['data'], true);
 											<?php autoComp("trac", "name"); ?>
 										</div>
 									</div>
-											<button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Search Database</button>
+											<button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Database durchsuchen</button>
 										</form>
 									</div>
 								</div>
