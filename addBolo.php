@@ -48,7 +48,7 @@ $cminfo = json_decode($cminfo['data'], true);
 		<link rel="apple-touch-icon" href="img/favicons/icon.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/114x114.png">
-		
+		lookout.
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -76,8 +76,8 @@ $cminfo = json_decode($cminfo['data'], true);
 					<div id="heading" class="row">
 						<div class="col-12">
 							<header>
-								<h1>Add Bolo</h1>
-								<h2>Bolo's will expire after 1 hour.</h2>
+								<h1>Bolo hinzufügen</h1>
+								<h2>Bolo's werden nach 1 Stunde gelöscht.</h2>
 							</header>
 						</div>
 					</div>
@@ -92,18 +92,18 @@ $cminfo = json_decode($cminfo['data'], true);
                               <form id="post-comment" class="inner" action="addBolo.php" method="post">
 								 <div class="row">
 										<div class="form-group col-8">
-										  <label for="boloInfo">BOLO Information (keep it short but specific) [IE: Black Escalade with 3 occupants, armed and dangerous.] <span class="form-required" title="This field is required.">*</span></label>
+										  <label for="boloInfo">BOLO Information (kurz halten aber Informativ) [Beispiel: Schwarzer Escalade mit 3 Personen, Bewaffnet und Gefährlich.] <span class="form-required" title="This field is required.">*</span></label>
 											<input type="text" name="boloInfo" class="form-control" id="boloInfo" required>
 								   		</div>
 								</div>
-                                <button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Add Bolo</button>
+                                <button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Bolo hinzufügen</button>
 							  </form>
 							  <?php $ht = ($histLimit > "1") ? "hours" : "hour"; ?>
 							  <form id="post-history" class="inner" action="addBolo.php" method="post">
 									<div class="row">
 										<div class="form-group col-4">
-										Show BOLOs from the last <input style="width:50%" type="text" name="history" class="form-control" id="history" placeholder="<?php echo($histLimit); ?>" required> <?php echo($ht); ?>.
-                                        <button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Show</button>
+										Zeige BOLOs von den letzten <input style="width:50%" type="text" name="history" class="form-control" id="history" placeholder="<?php echo($histLimit); ?>" required> <?php echo($ht); ?>.
+                                        <button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Anzeigen</button>
 										</div>
 									</div>
 							   </form>
@@ -115,11 +115,11 @@ $cminfo = json_decode($cminfo['data'], true);
 							  <table style="text-align: center">
 							  	<tbody>
 							  		<tr>
-							  			<th>Time Entered</th>
-							  			<th>Issuing Officer</th>
+							  			<th>Hinzugefügt am</th>
+							  			<th>Hinzugefügt von</th>
 							  			<th>Cancelling Officer</th>
 							  			<th>BOLO Information</th>
-							  			<th>Cancel BOLO</th>
+							  			<th>BOLO löschen</th>
 							  		</tr>
 							  		<?php
 							  		$format = "Y-m-d H:i:s";
