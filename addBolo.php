@@ -86,7 +86,7 @@ $cminfo = json_decode($cminfo['data'], true);
 							<article class="inner">
 								<div class="row">
 								  <div class="col-12">
-									<h4>View Active/Add Bolo</h4>
+									<h4>Zeige active/Bolo hinzufügen</h4>
 									</div>
 								</div>
                               <form id="post-comment" class="inner" action="addBolo.php" method="post">
@@ -132,7 +132,7 @@ $cminfo = json_decode($cminfo['data'], true);
 											$doffi = getUser($bolos[$i]['canceled'], U_ID);
 											$coffi = $doffi['display'];
 										}else{
-											$btnShow = "<form id=\"cancel-bolo\" action=\"addBolo.php\" method=\"post\"><input type=\"hidden\" value=\"$boid\" name=\"boid\"><input type=\"hidden\" value=\"$histLimit\" name=\"history\"><button type=\"submit\" class=\"btn btn-color\"><i class=\"glyphicon glyphicon-send\"></i>Cancel Bolo</button></form>";
+											$btnShow = "<form id=\"cancel-bolo\" action=\"addBolo.php\" method=\"post\"><input type=\"hidden\" value=\"$boid\" name=\"boid\"><input type=\"hidden\" value=\"$histLimit\" name=\"history\"><button type=\"submit\" class=\"btn btn-color\"><i class=\"glyphicon glyphicon-send\"></i>Bolo löschen</button></form>";
 											$coffi = "none";
 										}
 										$utcTS = antiXSS($bolos[$i]['RealDate']);
