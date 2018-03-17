@@ -117,7 +117,7 @@ $cminfo = json_decode($cminfo['data'], true);
 							  		<tr>
 							  			<th>Hinzugefügt am</th>
 							  			<th>Hinzugefügt von</th>
-							  			<th>Cancelling Officer</th>
+							  			<th>Gelöscht von</th>
 							  			<th>BOLO Information</th>
 							  			<th>BOLO löschen</th>
 							  		</tr>
