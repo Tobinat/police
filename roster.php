@@ -52,7 +52,7 @@ $cminfo = json_decode($cminfo['data'], true);
 						<div class="col-12">
 
 							<header>
-								<h1>Metropolis Law Enforcement Roster</h1>
+								<h1>Metropolis Law Enforcement Dienstplan</h1>
 							</header>
 
 						</div>
@@ -61,7 +61,7 @@ $cminfo = json_decode($cminfo['data'], true);
 						<div class="col-12">
                         <div class="alert alert-info fade in">
 										<i class="fa fa-info-circle"></i>
-										<p>If something is wrong here contact your command. If no one in your command can help you, then conact me. -Cole</p>
+										<p>Ist hier etwas falsch informieren deinen Vorgesetzten.</p>
 									</div>
 							<article class="inner">
 								<div class="row">
