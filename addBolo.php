@@ -142,7 +142,7 @@ $cminfo = json_decode($cminfo['data'], true);
 							  		?>
 							  	</tbody>
 							  </table>
-							  <?php } else echo "There are no BOLOs to display!"; ?>
+							  <?php } else echo "Es gibt keine activen BOLOs!"; ?>
 							  </center>
 							</article>
 						</div>
