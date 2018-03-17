@@ -86,7 +86,7 @@ $cminfo = json_decode($cminfo['data'], true);
 							<article class="inner">
 								<div class="row">
 								  <div class="col-12">
-									<h4>Zeige active/Bolo hinzufügen</h4>
+									<h4>Zeige Aktive/Bolo hinzufügen</h4>
 									</div>
 								</div>
                               <form id="post-comment" class="inner" action="addBolo.php" method="post">
