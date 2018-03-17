@@ -18,7 +18,7 @@ $cminfo = json_decode($cminfo['data'], true);
 
 		<!-- Meta -->
 		<meta charset="UTF-8">
-		<title><?php echo $cminfo['pda']; ?> - Recent Citations</title>
+		<title><?php echo $cminfo['pda']; ?> - letzten Straftaten</title>
 		<meta name="description" content="<?php echo $cminfo['pdn']; ?> - Recent Citations">
 		<meta name="author" content="Cole, Scott Harm (Retired)">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -57,7 +57,7 @@ $cminfo = json_decode($cminfo['data'], true);
 					<div id="heading" class="row">
 						<div class="col-12">
 							<header>
-								<h1>Recent Citations - Last 24 Hours</h1>
+								<h1>kürzliche Straftaten - letzten 24 Stunden</h1>
 							</header>
 						</div>
 					</div>
@@ -66,7 +66,7 @@ $cminfo = json_decode($cminfo['data'], true);
 							<article class="inner">
 								<div class="row">
 								  <div class="col-12">
-									<h4>Retrieved <?php echo $acnt; ?> Citations</h4>
+									<h4><?php echo $acnt; ?> Straftaten abgefragt</h4>
 									</div>
 								</div>
                                 <center>
