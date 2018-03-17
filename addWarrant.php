@@ -1,5 +1,6 @@
 <!doctype html>
 <?php
+
 require_once("php_includes/base.inc.php");
 if(!hasPerm("officer")){
 	redirect("/index.php");
