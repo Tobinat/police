@@ -86,21 +86,21 @@ if(isset($_POST['cmn'])) {
 												<input type="text" name="pdn" value="<?php echo $info['pdn']; ?>" class="form-control" id="pdn" style="width:100%">
 										</div>
 										<div class="form-group col-3">
-											<label for="pda" title="Example: NYPD">Police Department Abbreviation: [<strong>?</strong>]</label>
+											<label for="pda" title="Example: NYPD">Police Department Abkürzung: [<strong>?</strong>]</label>
 												<input type="text" name="pda" value="<?php echo $info['pda']; ?>" class="form-control" id="pda" style="width:100%">
 										</div>
 										<div class="form-group col-3">
-											<label for="cn" title="Why should officers contact if they find an issue with the database?">Contact Name: [<strong>?</strong>]</label>
+											<label for="cn" title="Problem mit der Datenbank?">Contact Name: [<strong>?</strong>]</label>
 												<input type="text" name="cn" value="<?php echo $info['cn']; ?>" class="form-control" id="cn" style="width:100%">
 										</div>
 										<div class="form-group col-12">
-											<button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Submit Changes</button>
+											<button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Änderungen Sichern</button>
 										</div>
 									</div>
                                     </form>
 									<div class="form-group col-12" style="border:double">
-										<h3>Need Help or want something custom?</h3>
-										<p>While I may not be continuing work on this project, I still help when needed. If you have a question or need to report a bug, feel free to shoot me an email. If you’re interested in having a custom feature made, feel free to email me as well, of course though there is a price to be paid for custom work.<br><strong>contact@coltonbrister.com</strong><br>Please also make sure you read the <a href="https://github.com/ColeB97/A3-Police-Database/wiki" target="_blank">Documentation</a></p>
+										/*<h3>Need Help or want something custom?</h3>*/
+										/* <p>While I may not be continuing work on this project, I still help when needed. If you have a question or need to report a bug, feel free to shoot me an email. If you’re interested in having a custom feature made, feel free to email me as well, of course though there is a price to be paid for custom work.<br><strong>contact@coltonbrister.com</strong><br>Please also make sure you read the <a href="https://github.com/ColeB97/A3-Police-Database/wiki" target="_blank">Documentation</a></p>*/
 									</div>
                                     </div>
 								</div>
@@ -111,7 +111,7 @@ if(isset($_POST['cmn'])) {
 			</div>
 			<?php require_once("sidebar.php"); ?>
 				<footer>
-					<p class="copyright">&copy; Copyright 2017 <a href="http://coltonbrister.com" target="_blank">Colton Brister</a></p>
+					<p class="copyright">&copy; Copyright 2018 <a href="http://project-rpg.de" target="_blank">PRPG</a></p>
 				</footer>
 			</div>
 		</div>
