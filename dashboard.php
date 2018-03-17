@@ -123,20 +123,20 @@ if(isset($_POST['link1']))
                                     <div class="form-group col-6" style="border:double">
                                 	<div class="form-group col-4">
                                     	<h3>Police Freqs</h3>
-                                    	<label for="fr1">Frequency 1:</label>
+                                    	<label for="fr1">Frequenz 1:</label>
 											<input type="text" name="tac1" value="<?php echo $info['tac1']; ?>" class="form-control" id="fr1" style="width:75%">
-										<label for="fr2">Frequency 2:</label>
+										<label for="fr2">Frequenz 2:</label>
 											<input type="text" name="tac2" value="<?php echo $info['tac2']; ?>" class="form-control" id="fr2" style="width:75%">
-                                        <label for="doc">DOC Frequency:</label>
+                                        <label for="doc">DOC Frequenz:</label>
 											<input type="text" name="doc1" value="<?php echo $info['doc1']; ?>" class="form-control" id="doc" style="width:75%">
 										<?php if(hasPerm("dtu")) { ?>
-										<label for="dtu">DTU Frequency:</label>
+										<label for="dtu">DTU Frequenz:</label>
 											<input type="text" name="dtu" value="<?php  echo $info['dtu']; ?>" class="form-control" id="dtu" style="width:75%"> 
 										<?php } ?>
-                                        <label for="fr3">Emergency:</label>
+                                        <label for="fr3">Notfall:</label>
 											<input type="text" style="width:75%" id="fr3" class="form-control" value="<?php echo $info['emg']; ?>" name="emg">
                                         <div class="styled-select">
-                                        <label>Active Frequency:</label>
+                                        <label>Active Frequenz:</label>
                                         <select style="width: 200px" name="active">
 												<option value="tac1" <?php if($info['active'] == "tac1") echo "selected"; ?>>Tac 1</option>
 												<option value="tac2" <?php if($info['active'] == "tac2") echo "selected"; ?>>Tac 2</option>
@@ -160,21 +160,21 @@ if(isset($_POST['link1']))
 										</select>
                                         </div>
                                         <br/>
-                                         	<button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Submit Frequencies</button>
+                                         	<button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Frequenzen Speichern</button>
                                     </div>
 									<div class="form-group col-4">
-                                     	<h3>Freq Generator</h3>
-                                        	<label for="randFreq">Frequency Generater:</label>
+                                     	<h3>Frequenz Generator</h3>
+                                        	<label for="randFreq">Generierte Frequenz:</label>
 												<input type="text" style="width:60%" id="randfreq" class="form-control" onclick="this.focus(); this.select();">
                                                 <br>
-                                         	<button class="btn btn-color" type="button" onclick="var freq = Math.random() * 10000 % 52 +34; freq = freq.toString().substring(0,4); document.getElementById('randfreq').value = freq; document.getElementById('randfreq').focus(); document.getElementById('randfreq').select();"><i class="glyphicon glyphicon-send"></i>Generate</button>
+                                         	<button class="btn btn-color" type="button" onclick="var freq = Math.random() * 10000 % 52 +34; freq = freq.toString().substring(0,4); document.getElementById('randfreq').value = freq; document.getElementById('randfreq').focus(); document.getElementById('randfreq').select();"><i class="glyphicon glyphicon-send"></i>Generieren</button>
                                          	
                                     </div>
                                     </form>
                                     </div>
                                     <div class="form-group col-6" style="border:double">
                                     <div class="form-group col-6">
-                                    	<h3>Database Overview</h3>
+                                    	<h3>Datenbank Übersicht</h3>
                                         <font size="+1">
                                         	<label>Officers requesting Transfer/Placement: <strong><?php echo $pndplcTotal; ?></strong></label>
                                             <br>
@@ -196,11 +196,11 @@ if(isset($_POST['link1']))
                                     </div>
 									<form action="dashboard.php" method="post">
                                     	<div class="form-group col-12" style="border:double">
-											<h3>Useful Info Links (Blank = nothing will be shown)</h3>
+											<h3>Nützliche Info Links (Leer = nichts wird Angezeigt)</h3>
 											<table style="text-align: center">
 												<tr>
-													<th>Link Text</th>
-													<th>Page Link</th>
+													<th>Link Name</th>
+													<th>Seiten Link</th>
 												</tr>
 												<tr>
 													<td><input type="text" name="text1" value="<?php echo $infot['text1']; ?>" class="form-control" id="text1"></td>
@@ -243,7 +243,7 @@ if(isset($_POST['link1']))
 													<td><input type="text" name="link10" value="<?php echo $infol['link10']; ?>" class="form-control" id="link10"></td>
 												</tr>
 											</table>
-											<button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Submit Links</button>
+											<button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Links Speichern</button>
 											<br><br>
                                     	</div>
                                 	</form>
