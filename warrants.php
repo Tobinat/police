@@ -17,9 +17,9 @@ $cminfo = json_decode($cminfo['data'], true);
 
 		<!-- Meta -->
 		<meta charset="UTF-8">
-		<title><?php echo $cminfo['pda']; ?> - Active Warrants</title>
+		<title><?php echo $cminfo['pda']; ?> - Aktive Haftbefehle</title>
 		<meta name="description" content="<?php echo $cminfo['pdn']; ?> - Active Warrants">
-		<meta name="author" content="Cole, Scott Harm (Retired)">
+		<meta name="author" content="PRPG">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -56,7 +56,7 @@ $cminfo = json_decode($cminfo['data'], true);
 					<div id="heading" class="row">
 						<div class="col-12">
 							<header>
-								<h1>All Active Warrants</h1>
+								<h1>Alle Aktiven Haftbefehle</h1>
 							</header>
 						</div>
 					</div>
@@ -65,7 +65,7 @@ $cminfo = json_decode($cminfo['data'], true);
 							<article class="inner">
 								<div class="row">
 									<div class="col-12">
-										<h4>Total Active Warrants - <?php echo $acnt;?></h4>
+										<h4>Alle Haftbefehle - <?php echo $acnt;?></h4>
 									</div>
 								</div>
 									<center>
@@ -76,9 +76,9 @@ $cminfo = json_decode($cminfo['data'], true);
 								  	<tbody>
 									<tr>
 										<th>Name</th>
-										<th>Approving Judge</th>
-										<th>Crimes</th>
-										<th>Type</th>
+										<th>Genehmigender Richter</th>
+										<th>Verbrechen</th>
+										<th>Art</th>
 										<th>Date</th>
 										<th>Link</th>
 									</tr>
@@ -92,7 +92,7 @@ $cminfo = json_decode($cminfo['data'], true);
 									?>
 								  </tbody>
 								  </table>
-								  <?php } else echo "There are currently no active warrants!"; ?>
+								  <?php } else echo "Derzeit gibt es keine aktiven Haftbefehle!"; ?>
 								</center>
 							</article>
 						</div>
@@ -101,7 +101,7 @@ $cminfo = json_decode($cminfo['data'], true);
 			</div>
 			<?php require_once("sidebar.php"); ?>
 				<footer>
-					<p class="copyright">&copy; Copyright 2017 <a href="http://coltonbrister.com" target="_blank">Colton Brister</a></p>
+					<p class="copyright">&copy; Copyright 2018 <a href="http://project-rpg.de" target="_blank">PRPG</a></p>
 				</footer>
 			</div>
 		</div>

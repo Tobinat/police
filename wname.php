@@ -14,7 +14,7 @@ $cminfo = json_decode($cminfo['data'], true);
 
 		<!-- Meta -->
 		<meta charset="UTF-8">
-		<title><?php echo $cminfo['pda']; ?> - Search/Add Warrants</title>
+		<title><?php echo $cminfo['pda']; ?> - Suchen/Hinzufügen:</title>
 		<meta name="description" content="<?php echo $cminfo['pdn']; ?> - Search/Add Warrants">
 		<meta name="author" content="Cole, Scott Harm (Retired)">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -56,8 +56,8 @@ $cminfo = json_decode($cminfo['data'], true);
 						<div class="col-12">
 
 							<header>
-								<h1>Search/Add Warrants</h1>
-								<h2>Only DOJ will be able to add warrants.</h2>
+								<h1>Suchen/Hinzufügen</h1>
+								<h2>Nur das DOJ kann Haftbefehle hinzufügen.</h2>
 							</header>
 
 						</div>
@@ -67,7 +67,7 @@ $cminfo = json_decode($cminfo['data'], true);
 							<article class="inner">
 								<div class="row">
 									<div class="col-12">
-										<h4>Enter Name:</h4>
+										<h4>Name eingeben:</h4>
                                        	<form id="post-comment" class="inner" action="addWarrant.php" method="post">
 										<div class="row">
 										<div class="form-group col-4">
@@ -77,8 +77,7 @@ $cminfo = json_decode($cminfo['data'], true);
 									</div>
 											<button type="submit" class="btn btn-color"><i class="glyphicon glyphicon-send"></i>Enter</button>
 										</form>
-                                        <h4>Can't find SOP's? Criminal Code? Lawyer's? <a href="https://police.life-studios.net/info.php">Look no further!</a></h4>
-									</div>
+                                       </div>
 								</div>
 							</article>
 						</div>
@@ -87,7 +86,7 @@ $cminfo = json_decode($cminfo['data'], true);
 			</div>
 			<?php require_once("sidebar.php"); ?>
 				<footer>
-					<p class="copyright">&copy; Copyright 2017 <a href="http://coltonbrister.com" target="_blank">Colton Brister</a></p>
+					<p class="copyright">&copy; Copyright 2018 <a href="http://project-rpg.de" target="_blank">PRPG</a></p>
 				</footer>
 			</div>
 		</div>
