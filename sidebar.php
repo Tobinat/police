@@ -16,13 +16,13 @@
 							require_once("php_includes/base.inc.php");
 							if($off) {
 							?>
-                            <li><a href="addBolo.php">BOLO Dashboard</a></li>
-                            <li><a href="freq.php">Frequencies & Threat</a></li>
-                            <li><a href="#">Records</a>
+                            <li><a href="addBolo.php">Warnungen Dashboard</a></li>
+                            <li><a href="freq.php">Frequenzen & Bedrohungen</a></li>
+                            <li><a href="#">Aufzeichnungen</a>
                             	<ul>
-                            		<li><a href="crime.php">Criminal Database</a></li>
-                                    <li><a href="traffic.php">Infractions</a></li>
-                                    <li><a href="doc.php">DOC Panel</a></li>
+                            		<li><a href="crime.php">Strafregister</a></li>
+                                    <li><a href="traffic.php">Straftaten</a></li>
+                                    <li><a href="doc.php">DOJ Panel</a></li>
                                     <?php if(hasPerm("doj")) { ?>
                                     <li><a href="expungement.php">Expungements</a></li>
                                     <?php } ?>
@@ -40,17 +40,17 @@
                                 	<li><a href="info.php">Useful Links</a></li>
                                 </ul>
                             </li>
-							<li><a href="#">Warrants</a>
+							<li><a href="#">Haftbefehle</a>
                             	<ul>
-                            		<li><a href="wname.php">Search/Add Warrants</a></li>
-                                	<li><a href="warrants.php">View All Warrants</a></li>
+                            		<li><a href="wname.php">Suchen/Hinzufügen</a></li>
+                                	<li><a href="warrants.php">Alle Haftbefehle ansehen</a></li>
                                 </ul>
                             </li>
 							<?php
                             }
 							if($off && $cmd) {
 							?>
-							<li><a href="#">Command Tools</a>
+							<li><a href="#">Befehlstools</a>
                             	<ul>
                             		<li><a href="dashboard.php">Dashboard</a></li>
                                 	<li><a href="verify.php">User Requests</a></li>
@@ -64,7 +64,7 @@
 							<li><a href="#">Admin Tools</a>
                             	<ul>
                             		<li><a href="admin.php">Database Settings</a></li>
-                            		<li><a href="all.php">All Arrests</a></li>
+                            		<li><a href="all.php">Alle Verhaftungen</a></li>
                             		<li><a href="passhasher.php">Password Hasher</a></li>
                                 </ul>
                             </li>
@@ -72,9 +72,9 @@
 							}
 							?>
 							<?php if(isLoggedIn()) { ?>
-                            <li><a href="settings.php">User Settings</a></li>
+                            <li><a href="settings.php">Benutzereinstellungen</a></li>
                             <li><a href="changes.php">Changelog</a></li>
-                            <li><a href="logout.php">Logout</a></li><?php } ?>
+                            <li><a href="logout.php">Ausloggen</a></li><?php } ?>
 						</ul>
 					</nav>
 

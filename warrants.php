@@ -65,7 +65,7 @@ $cminfo = json_decode($cminfo['data'], true);
 							<article class="inner">
 								<div class="row">
 									<div class="col-12">
-										<h4>Alle Haftbefehle - <?php echo $acnt;?></h4>
+										<h4>Haftbefehle - <?php echo $acnt;?></h4>
 									</div>
 								</div>
 									<center>
