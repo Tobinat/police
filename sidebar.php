@@ -25,6 +25,7 @@
 									<?php if(hasPerm("doj")) { ?>
                                     <li><a href="doc.php">DOJ Panel</a></li>
                                     <li><a href="expungement.php">Expungements</a></li>
+									<li><a href="all.php">Alle Verhaftungen</a></li>
                                     <?php } ?>
                                 </ul>
                             </li>

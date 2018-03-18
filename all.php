@@ -1,8 +1,8 @@
 <!doctype html>
 <?php
 require_once("php_includes/base.inc.php");
-if(!hasPerm("all")){
-	echo "You are not a developer! Redirecting.";
+if(!hasPerm("officer")){
+	echo "Leider hast du keine Rechte :(!";
 	redirect("/index.php");
 	die();
 }
