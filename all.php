@@ -56,7 +56,7 @@ $cminfo = json_decode($cminfo['data'], true);
 					<div id="heading" class="row">
 						<div class="col-12">
 							<header>
-								<h1>Alle Anzeigen - Dev Use Only</h1>
+								<h1>Alle Anzeigen</h1>
 							</header>
 						</div>
 					</div>
@@ -78,7 +78,7 @@ $cminfo = json_decode($cminfo['data'], true);
 										<th>Zeit</th>
 										<th>Kaution</th>
 										<th>Bond</th>
-										<th>Arresting Officer</th>
+										<th>Aufgenommen durch</th>
 										<th>Beweismittel</th>
 									</tr>
 									<?php
