@@ -19,7 +19,7 @@ $cminfo = json_decode($cminfo['data'], true);
 
 		<!-- Meta -->
 		<meta charset="UTF-8">
-		<title><?php echo $cminfo['pda']; ?> - All Arrests</title>
+		<title><?php echo $cminfo['pda']; ?> - Verhaftungen</title>
 		<meta name="description" content="<?php echo $cminfo['pdn']; ?> - Recent Arrests">
 		<meta name="author" content="Cole, Scott Harm (Retired)">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -65,21 +65,21 @@ $cminfo = json_decode($cminfo['data'], true);
 							<article class="inner">
 								<div class="row">
 								  <div class="col-12">
-									<h4>Retrieved <?php echo $acnt; ?> Arrests</h4>
+									<h4>abrufen <?php echo $acnt; ?> Verhaftungen</h4>
 									</div>
 								</div>
                                 <center>
 							  	<table style="text-align: center">
 								  <tbody>
 									<tr>
-										<th>Time of Arrest</th>
+										<th>Zeit der Verhaftung</th>
 										<th>Name</th>
-										<th>Crime</th>
-										<th>Time</th>
-										<th>Bail</th>
+										<th>Delikt</th>
+										<th>Zeit</th>
+										<th>Kaution</th>
 										<th>Bond</th>
 										<th>Arresting Officer</th>
-										<th>Evidence</th>
+										<th>Beweismittel</th>
 									</tr>
 									<?php
 									for($i = 0; $i < $acnt; $i++) {
@@ -99,7 +99,7 @@ $cminfo = json_decode($cminfo['data'], true);
 			</div>
 			<?php require_once("sidebar.php"); ?>
 				<footer>
-					<p class="copyright">&copy; Copyright 2017 <a href="http://coltonbrister.com" target="_blank">Colton Brister</a></p>
+					<p class="copyright">&copy; Copyright 2018 <a href="http://project-rpg.de" target="_blank">PRPG</a></p>
 				</footer>
 			</div>
 		</div>

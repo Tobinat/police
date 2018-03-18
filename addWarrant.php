@@ -80,7 +80,7 @@ $cminfo = json_decode($cminfo['data'], true);
 						<div class="col-12">
 							<header>
 								<h1>Search/Add Warrants</h1>
-								<h2>Only DOJ will be able to add warrants.</h2>
+								<h2>Nur das DOJ ist in der Lage Warrants hinzuzufügen.</h2>
 							</header>
 						</div>
 					</div>
@@ -133,7 +133,7 @@ $cminfo = json_decode($cminfo['data'], true);
 													<th>Approving Judge</th>
 													<th>Crimes</th>
 													<th>Type</th>
-													<th>Date</th>
+													<th>Datum</th>
 													<th>Link</th>
 													<th>Serve</th>
 												</tr>
@@ -163,7 +163,7 @@ $cminfo = json_decode($cminfo['data'], true);
 			</div>
 			<?php require_once("sidebar.php"); ?>
 				<footer>
-					<p class="copyright">&copy; Copyright 2017 <a href="http://coltonbrister.com" target="_blank">Colton Brister</a></p>
+					<p class="copyright">&copy; Copyright 2018 <a href="http://project-rpg.de" target="_blank">Project-RPG.de</a></p>
 				</footer>
 			</div>
 		</div>

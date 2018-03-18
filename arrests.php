@@ -57,7 +57,7 @@ $cminfo = json_decode($cminfo['data'], true);
 					<div id="heading" class="row">
 						<div class="col-12">
 							<header>
-								<h1>Recent Arrest History - Last 24 Hours</h1>
+								<h1>Recent Arrest History - Letzte 24 Stunden</h1>
 							</header>
 						</div>
 					</div>
@@ -73,11 +73,11 @@ $cminfo = json_decode($cminfo['data'], true);
 							  	<table style="text-align: center">
 								  <tbody>
 									<tr>
-										<th>Time of Arrest</th>
+										<th>Zeit der Verhaftung</th>
 										<th>Name</th>
 										<th>Crime</th>
-										<th>Time</th>
-										<th>Bail</th>
+										<th>Zeit</th>
+										<th>Kaution</th>
 										<th>Bond</th>
 										<th>Arresting Officer</th>
                                         <th>Processing Officer</th>
@@ -103,7 +103,7 @@ $cminfo = json_decode($cminfo['data'], true);
 			</div>
 			<?php require_once("sidebar.php"); ?>
 				<footer>
-					<p class="copyright">&copy; Copyright 2017 <a href="http://coltonbrister.com" target="_blank">Colton Brister</a></p>
+					<p class="copyright">&copy; Copyright 2018 <a href="http://project-rpg.de" target="_blank">PRPG</a></p>
 				</footer>
 			</div>
 		</div>

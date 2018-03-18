@@ -82,11 +82,11 @@ if(isset($_POST['cmn'])) {
 												<input type="text" name="cmn" value="<?php echo $info['cmn']; ?>" class="form-control" id="cmn" style="width:100%">
 										</div>
 										<div class="form-group col-3">
-											<label for="pdn" title="Example: New York City Police Department">Police Department Name: [<strong>?</strong>]</label>
+											<label for="pdn" title="Example: New York City Police Department">Department Name: [<strong>?</strong>]</label>
 												<input type="text" name="pdn" value="<?php echo $info['pdn']; ?>" class="form-control" id="pdn" style="width:100%">
 										</div>
 										<div class="form-group col-3">
-											<label for="pda" title="Example: NYPD">Police Department Abkürzung: [<strong>?</strong>]</label>
+											<label for="pda" title="Example: NYPD">Department Abkürzung: [<strong>?</strong>]</label>
 												<input type="text" name="pda" value="<?php echo $info['pda']; ?>" class="form-control" id="pda" style="width:100%">
 										</div>
 										<div class="form-group col-3">

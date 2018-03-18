@@ -76,7 +76,7 @@ $cminfo = json_decode($cminfo['data'], true);
 					<div id="heading" class="row">
 						<div class="col-12">
 							<header>
-								<h1>Bolo hinzufügen</h1>
+								<h1>Bolo Dashboard</h1>
 								<h2>Bolo's werden nach 1 Stunde gelöscht.</h2>
 							</header>
 						</div>
@@ -86,7 +86,7 @@ $cminfo = json_decode($cminfo['data'], true);
 							<article class="inner">
 								<div class="row">
 								  <div class="col-12">
-									<h4>Zeige Aktive/Bolo hinzufügen</h4>
+									<h4>BOLO Dashboard</h4>
 									</div>
 								</div>
                               <form id="post-comment" class="inner" action="addBolo.php" method="post">
@@ -151,7 +151,7 @@ $cminfo = json_decode($cminfo['data'], true);
 			</div>
 			<?php require_once("sidebar.php"); ?>
 				<footer>
-					<p class="copyright">&copy; Copyright 2017 <a href="http://coltonbrister.com" target="_blank">Colton Brister</a></p>
+					<p class="copyright">&copy; Copyright 2018 <a href="http://www.project-rpg.de" target="_blank">PRPG</a></p>
 				</footer>
 			</div>
 			
