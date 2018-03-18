@@ -79,7 +79,7 @@ $cminfo = json_decode($cminfo['data'], true);
 	</div>
 </div>	
 <div class="copyright">
-	<p class="copyright">&copy; Copyright 2017 <a href="http://coltonbrister.com" target="_blank">Colton Brister</a></p>
+	<p class="copyright">&copy; Copyright 2018 <a href="http://project-rpg.de" target="_blank">PRPG</a></p>
 </div>
 </body>
 </html>

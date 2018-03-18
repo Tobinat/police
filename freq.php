@@ -131,7 +131,7 @@ fclose($file);
 			</div>
 			<?php require_once("sidebar.php"); ?>
 				<footer>
-					<p class="copyright">&copy; Copyright 2017 <a href="http://coltonbrister.com" target="_blank">Colton Brister</a></p>
+					<p class="copyright">&copy; Copyright 2018 <a href="http://project-rpg.de" target="_blank">PRPG</a></p>
 				</footer>
 			</div>
 		</div>
