@@ -144,7 +144,7 @@ $cminfo = json_decode($cminfo['data'], true);
 													$cname = getCiv($warrants[$i]['uid'], U_ID);
 													$exid = $warrants[$i]['id'];
 													echo "
-													<tr><td style=\"width:15%\"\>".antiXSS($cname['name'])."</td><td style=\"width:15%\">".antiXSS($warrants[$i]['dojname'])."</td><td style=\"width:30%\">".titleFormat(antiXSS($warrants[$i]['crimes']))."</td><td style=\"width:10%\">".antiXSS($warrants[$i]['wtype'])."</td><td style=\"width:10%\">".antiXSS($warrants[$i]['date'])."</td><td style=\"width:10%\">".("<a href=".$warrants[$i]['wlink']." target=\"_blank\">WARRANT LINK</a>")."</td>
+													<tr><td style=\"width:15%\"\>".antiXSS($cname['name'])."</td><td style=\"width:15%\">".antiXSS($warrants[$i]['dojname'])."</td><td style=\"width:30%\">".titleFormat(antiXSS($warrants[$i]['crimes']))."</td><td style=\"width:10%\">".antiXSS($warrants[$i]['wtype'])."</td><td style=\"width:10%\">".antiXSS($warrants[$i]['date'])."</td><td style=\"width:10%\">".("<a href=".$warrants[$i]['wlink']." target=\"_blank\">Haftbefehl LINK</a>")."</td>
 													
 													<td><form action=\"addWarrant.php\" method=\"post\"><input type=\"hidden\" value=\"$exid\" name=\"eid\"><input type=\"hidden\" value=\"$crim\" name=\"crim\"><button type=\"submit\" class=\"btn btn-color\"><i class=\"glyphicon glyphicon-send\"></i>Serve Warrant</button></form></td>
 													
