@@ -73,7 +73,7 @@ $cminfo = json_decode($cminfo['data'], true);
 								  <tbody>
 									<tr>
 										<th>Zeit der Verhaftung</th>
-										<th>Name</th>
+										<th>Angezeigt</th>
 										<th>Delikt</th>
 										<th>Zeit</th>
 										<th>Kaution</th>
